@@ -10,7 +10,7 @@ package com.sameer;
 
 
 import java.io.*;
-import java.net.*;
+import java.net.*;  // class socket is in java.net
 
 public class clientCode {
 
@@ -31,8 +31,9 @@ public class clientCode {
             String advice = reader.readLine();
             System.out.println("today you should: " + advice);
 
-            // this close all the streams
-            reader.close();
+
+            reader.close();    // this close all the streams
+
         }  catch (IOException ex){
             ex.printStackTrace();
         }
